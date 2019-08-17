@@ -44,8 +44,10 @@ In the Supervisor View, the Supervisor can View Product Sales by Department and 
 
 ![na](supervisor_02.png)
 
-Additionally, the information is dynamic.  In the customer view, once a purchase has been made, the department database is update to reflect the new total_sales.
+Additionally, the information is dynamic.  In the customer view, once a purchase has been made, the department database is updated to reflect the new total_sales.
 
+
+- - -
 
 ## Assignment Overview
 
