@@ -5,7 +5,7 @@ let connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "secretpassword",
+    password: "",
     database: "bamazon"
 });
 
@@ -86,7 +86,27 @@ showTable = () => {
                         var total = (input.amount * parseFloat(res[want].price)).toFixed(2);
                         console.log("Your total is: $" + total);
                         console.log("Thank you for making your purchase!\n\n");
-                        start();
+                        
+                        //Updating Department
+                        connection.query("SELECT * FROM departments", function(err, results) {
+                            if (err) throw err;
+                            var index;
+                            //console.table(results);
+                            for (var i = 0; i < results.length; i++) {
+                                if (results[i].department_name === res[want].department_name) {
+                                    index = i;
+                                    //console.log(i);
+                                }
+                            }
+                            connection.query("UPDATE departments SET ? WHERE ?", [
+                                {product_sales: results[index].product_sales + total},
+                                {department_name: results[index].department_name}
+                            ], function(err, res) {
+                                if (err) throw err;
+                                start();
+                            });
+                        });
+                        /////////
                     });
                 });
             }

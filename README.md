@@ -1,6 +1,53 @@
 # Node.js & MySQL
 
+
 ## Overview
+
+In this app, I've created an Amazon-like storefront using Node and MySql which displays 3 different views.
+
+
+### Customer View
+
+In the Customer View, the customer can purchase items from bAmazon.
+The customer will choose what item they want and the amount.
+After the customer chooses what they want, the total is shows along with the prompt to make another purchase.
+
+![na](customer_01.png)
+
+If the customer chooses an amount not available, "Insufficient quantity!" is shown.
+
+![na](customer_02.png)
+
+
+### Manager View
+
+In the Manager View, the manager can view products for sales, view low inventory, add to inventory, and add a new product.
+
+![na](manager_01.png)
+
+![na](manager_02.png)
+
+![na](manager_03.png)
+
+![na](manager_05.png)
+
+Additionally, as managers only have so much access, the manager can only add an item from the departments available:
+
+![na](manager_04.png)
+
+
+### Supervisor View
+
+In the Supervisor View, the Supervisor can View Product Sales by Department and Create New Departments.
+
+![na](supervisor_01.png)
+
+![na](supervisor_02.png)
+
+Additionally, the information is dynamic.  In the customer view, once a purchase has been made, the department database is update to reflect the new total_sales.
+
+
+## Assignment Overview
 
 In this activity, you'll be creating an Amazon-like storefront with the MySQL skills you learned this unit. The app will take in orders from customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.
 

@@ -3,12 +3,21 @@ CREATE database bamazon;
 
 USE bamazon;
 
+DROP TABLE departments;
+
 CREATE TABLE departments (
 department_id INT AUTO_INCREMENT NOT NULL,
 department_name VARCHAR(100) NOT NULL,
-over_head_costs INT NOT NULL
+over_head_costs INT NOT NULL,
+product_sales DECIMAL(10,2) NOT NULL,
+PRIMARY KEY (department_id)
 );
 
+INSERT INTO departments(department_name, over_head_costs, product_sales)
+VALUES ("Grocery", 50000, 100000),
+("Electronics", 60000, 65000),
+("Home", 25000, 45000),
+("Beauty", 90000, 200000);
 
 CREATE TABLE products (
 item_id INT AUTO_INCREMENT NOT NULL,
@@ -33,3 +42,5 @@ VALUES ("Banana", "Grocery", 0.89, 1000),
 ("Lipstick", "Beauty", 10, 10);
 
 SELECT * FROM products;
+
+SELECT * FROM departments;
