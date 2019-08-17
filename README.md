@@ -9,8 +9,8 @@ In this app, I've created an Amazon-like storefront using Node and MySql which d
 ### Customer View
 
 In the Customer View, the customer can purchase items from bAmazon.
-The customer will choose what item they want and the amount.
-After the customer chooses what they want, the total is shows along with the prompt to make another purchase.
+The customer will choose what item and how much of the item they want.
+After the customer chooses what they want, the total is shown along with the prompt to make another purchase.
 
 ![na](customer_01.png)
 
