@@ -1,0 +1,17 @@
+{
+  "name": "homework_11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.5.1",
+    "mysql": "^2.17.1",
+    "table": "^5.4.5"
+  }
+}

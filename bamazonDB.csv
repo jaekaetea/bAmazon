@@ -1,0 +1,12 @@
+item_id,product_name,department_name,price,stock_quantity
+1,Banana,Grocery,0.89,1000
+2,Apple,Grocery,0.5,1000
+3,Grapes,Grocery,0.75,1000
+4,Left for Dead ,Electronics,29.99,100
+5,Killing Floor,Electronics,29.99,100
+6,Mario Karts,Electronics,59.99,100
+7,Bedsheet,Home,20,25
+8,Pillow,Home,5,25
+9,Eyeliner,Beauty,15,50
+10,Mascara,Beauty,15,50
+11,Lipstick,Beauty,10,50
